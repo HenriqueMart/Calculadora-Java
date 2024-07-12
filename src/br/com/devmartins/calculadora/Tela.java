@@ -13,6 +13,8 @@ public class Tela extends javax.swing.JFrame {
     /**
      * Creates new form Tela
      */
+    double valor = 0;
+    String operacao;
     public Tela() {
         initComponents();
     }
@@ -33,6 +35,7 @@ public class Tela extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         txtResultado = new javax.swing.JLabel();
+        txtOperacao = new javax.swing.JLabel();
         btnDelete = new javax.swing.JButton();
         btnValue = new javax.swing.JSpinner();
         jButton1 = new javax.swing.JButton();
@@ -90,6 +93,11 @@ public class Tela extends javax.swing.JFrame {
         txtResultado.setForeground(new java.awt.Color(0, 0, 0));
         txtResultado.setText("0");
 
+        txtOperacao.setBackground(new java.awt.Color(0, 0, 0));
+        txtOperacao.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        txtOperacao.setForeground(new java.awt.Color(0, 0, 0));
+        txtOperacao.setText("?");
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -97,17 +105,20 @@ public class Tela extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(txtResultado, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel1)
-                        .addGap(0, 176, Short.MAX_VALUE))
-                    .addComponent(txtResultado, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 109, Short.MAX_VALUE)
+                        .addComponent(txtOperacao, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtOperacao))
                 .addGap(121, 121, 121)
                 .addComponent(txtResultado, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(21, Short.MAX_VALUE))
@@ -123,7 +134,7 @@ public class Tela extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(43, Short.MAX_VALUE)
+                .addContainerGap(45, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(btnValue, javax.swing.GroupLayout.PREFERRED_SIZE, 258, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -166,20 +177,31 @@ public class Tela extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void tipodeoperacao(){
+        txtOperacao.setText(operacao);
+    }
     private void btnMultiplicacaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMultiplicacaoActionPerformed
         // TODO add your handling code here:
+        operacao = "*";
+        tipodeoperacao();
     }//GEN-LAST:event_btnMultiplicacaoActionPerformed
 
     private void btnMenosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMenosActionPerformed
         // TODO add your handling code here:
+        operacao = "-";
+        tipodeoperacao();
     }//GEN-LAST:event_btnMenosActionPerformed
 
     private void btnMaisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMaisActionPerformed
         // TODO add your handling code here:
+        operacao = "+";
+        tipodeoperacao();
     }//GEN-LAST:event_btnMaisActionPerformed
 
     private void btnDivisaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDivisaoActionPerformed
         // TODO add your handling code here:
+        operacao = "/";
+        tipodeoperacao();
     }//GEN-LAST:event_btnDivisaoActionPerformed
 
     /**
@@ -227,6 +249,7 @@ public class Tela extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JLabel txtOperacao;
     private javax.swing.JLabel txtResultado;
     // End of variables declaration//GEN-END:variables
 }
