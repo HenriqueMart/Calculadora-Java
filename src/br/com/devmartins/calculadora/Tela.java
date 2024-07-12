@@ -26,21 +26,242 @@ public class Tela extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        btn4 = new javax.swing.JButton();
+        btn5 = new javax.swing.JButton();
+        btn6 = new javax.swing.JButton();
+        btn7 = new javax.swing.JButton();
+        btn8 = new javax.swing.JButton();
+        btn9 = new javax.swing.JButton();
+        btn2 = new javax.swing.JButton();
+        btn1 = new javax.swing.JButton();
+        btn3 = new javax.swing.JButton();
+        jPanel1 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        txtResultado = new javax.swing.JLabel();
+        btnDelete = new javax.swing.JButton();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
+
+        btn4.setBackground(new java.awt.Color(153, 153, 153));
+        btn4.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        btn4.setForeground(new java.awt.Color(255, 255, 255));
+        btn4.setText("4");
+        btn4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn4ActionPerformed(evt);
+            }
+        });
+
+        btn5.setBackground(new java.awt.Color(153, 153, 153));
+        btn5.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        btn5.setForeground(new java.awt.Color(255, 255, 255));
+        btn5.setText("5");
+        btn5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn5ActionPerformed(evt);
+            }
+        });
+
+        btn6.setBackground(new java.awt.Color(153, 153, 153));
+        btn6.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        btn6.setForeground(new java.awt.Color(255, 255, 255));
+        btn6.setText("6");
+        btn6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn6ActionPerformed(evt);
+            }
+        });
+
+        btn7.setBackground(new java.awt.Color(153, 153, 153));
+        btn7.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        btn7.setForeground(new java.awt.Color(255, 255, 255));
+        btn7.setText("7");
+        btn7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn7ActionPerformed(evt);
+            }
+        });
+
+        btn8.setBackground(new java.awt.Color(153, 153, 153));
+        btn8.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        btn8.setForeground(new java.awt.Color(255, 255, 255));
+        btn8.setText("8");
+        btn8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn8ActionPerformed(evt);
+            }
+        });
+
+        btn9.setBackground(new java.awt.Color(153, 153, 153));
+        btn9.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        btn9.setForeground(new java.awt.Color(255, 255, 255));
+        btn9.setText("9");
+        btn9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn9ActionPerformed(evt);
+            }
+        });
+
+        btn2.setBackground(new java.awt.Color(153, 153, 153));
+        btn2.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        btn2.setForeground(new java.awt.Color(255, 255, 255));
+        btn2.setText("2");
+        btn2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn2ActionPerformed(evt);
+            }
+        });
+
+        btn1.setBackground(new java.awt.Color(153, 153, 153));
+        btn1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        btn1.setForeground(new java.awt.Color(255, 255, 255));
+        btn1.setText("1");
+        btn1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn1ActionPerformed(evt);
+            }
+        });
+
+        btn3.setBackground(new java.awt.Color(153, 153, 153));
+        btn3.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        btn3.setForeground(new java.awt.Color(255, 255, 255));
+        btn3.setText("3");
+        btn3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn3ActionPerformed(evt);
+            }
+        });
+
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setForeground(new java.awt.Color(0, 0, 0));
+
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        jLabel1.setText("CALCULADORA");
+
+        txtResultado.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        txtResultado.setForeground(new java.awt.Color(0, 0, 0));
+        txtResultado.setText("0");
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jLabel1)
+                        .addGap(0, 176, Short.MAX_VALUE))
+                    .addComponent(txtResultado, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(txtResultado, javax.swing.GroupLayout.DEFAULT_SIZE, 185, Short.MAX_VALUE)
+                .addGap(21, 21, 21))
+        );
+
+        btnDelete.setText("Delete");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(43, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(btn1, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btn2, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btn3, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(layout.createSequentialGroup()
+                            .addComponent(btn4, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(btn5, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(btn6, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                            .addComponent(btn7, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(btn8, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(btnDelete, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(btn9, javax.swing.GroupLayout.DEFAULT_SIZE, 82, Short.MAX_VALUE)))))
+                .addGap(30, 30, 30))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap(39, Short.MAX_VALUE)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btn1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn2, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn3, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btn4, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn5, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn6, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btn7, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn8, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn9, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(btnDelete)
+                .addGap(16, 16, 16))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btn4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn4ActionPerformed
+
+    private void btn5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn5ActionPerformed
+
+    private void btn6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn6ActionPerformed
+
+    private void btn7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn7ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn7ActionPerformed
+
+    private void btn8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn8ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn8ActionPerformed
+
+    private void btn9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn9ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn9ActionPerformed
+
+    private void btn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn2ActionPerformed
+
+    private void btn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn1ActionPerformed
+
+    private void btn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn3ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -78,5 +299,18 @@ public class Tela extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btn1;
+    private javax.swing.JButton btn2;
+    private javax.swing.JButton btn3;
+    private javax.swing.JButton btn4;
+    private javax.swing.JButton btn5;
+    private javax.swing.JButton btn6;
+    private javax.swing.JButton btn7;
+    private javax.swing.JButton btn8;
+    private javax.swing.JButton btn9;
+    private javax.swing.JButton btnDelete;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JLabel txtResultado;
     // End of variables declaration//GEN-END:variables
 }
